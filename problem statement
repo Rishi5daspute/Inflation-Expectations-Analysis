@@ -76,16 +76,3 @@ Convert dates with pd.to_datetime before plotting to prevent epoch errors.
 Use matplotlib.dates to simplify long-range x-axis labels.   
 Link observed patterns to real macroeconomic events (rate hikes, wars, policy changes).   
 Keep visuals clear — focus on narrative clarity over complex styling.   
-
-Frequently Asked Questions   
-Can I use external libraries like statsmodels or scikit-learn for smoothing?   
-
-Answer: Yes. Use any library you prefer; the emphasis is on clear reasoning and interpretability   .
-
-What if there are missing or duplicated dates?   
-
-Answer: Forward-fill or interpolate missing values. Drop duplicates only if clearly invalid.      
-
-Should I build predictive models?   
-
-Answer: Not required. Focus on descriptive trend analysis rather than predictive modeling.   
