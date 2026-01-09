@@ -1,0 +1,91 @@
+Assignment
+
+In this assignment, your task is to analyze the 10-Year Breakeven Inflation Rate (T10YIE) — a market-based measure of inflation expectations — and apply multiple time-series techniques to extract actionable insights.
+The project simulates a real-world financial analytics challenge where you are expected to explore the dataset, detect structural patterns, and interpret how market sentiment toward inflation evolved between 2020 and 2025.
+
+By combining classical statistical methods with visualization-driven analysis, you will uncover how economic events such as the post-pandemic recovery, monetary tightening, and geopolitical shocks shaped long-term inflation expectations.
+
+# Objective:  
+Perform a comprehensive trend analysis using the following three techniques:
+
+Moving Averages – Identify long-term and short-term trends in inflation expectations.    
+Year-over-Year Change – Quantify momentum shifts compared to the previous year.   
+Bollinger Bands – Detect volatility and periods of extreme market behavior.   
+
+# Data Description
+
+The dataset is sourced from the Federal Reserve Economic Data (FRED) under the series name T10YIE.    
+It represents the difference between nominal and inflation-protected Treasury yields — the market’s implied inflation rate over a 10-year horizon.     
+
+# Dataset Information:
+
+Source: Federal Reserve Bank of St. Louis (FRED)  
+Frequency: Daily   
+Period: October 2020 – October 2025   
+Columns:   
+observation_date: Date of observation (daily frequency)   
+T10YIE: 10-Year Breakeven Inflation Rate (%)     
+Observations: ~1,300     
+Range: 1.64 % – 3.02 %      
+Average: 2.33 %       
+The dataset captures major macroeconomic events — including the post-COVID stimulus, the 2022 inflation surge, Federal Reserve tightening cycles, and eventual market normalization.   
+
+# Analytical Techniques   
+Each of the three methods answers a different question about inflation expectations:   
+
+Technique	Objective	Insight Type   
+Moving Averages	Smooth short-term fluctuations	Trend detection   
+Year-over-Year Change	Compare current vs. last year’s value	Momentum & acceleration   
+Bollinger Bands	Measure volatility around trend	Extremes & normalization   
+Findings Summary   
+Key Observations    
+2020–2021: Sharp rise in inflation expectations during global recovery.   
+2022: Extreme volatility, with expectations peaking near 3 % amid geopolitical shocks.    
+2023: Decline as monetary tightening restored confidence.     
+2024–2025: Stabilization near 2.3 %, aligning with the Fed’s target.     
+Market Interpretation   
+Moving Averages captured early turning points in the inflation cycle.    
+Year-over-Year Change exposed acceleration and cooling phases invisible in the raw chart.     
+Bollinger Bands revealed volatility spikes and normalization periods tied to macroeconomic events.   
+
+Business Implications   
+For Policymakers:    
+Narrow Bollinger Bands and stable moving averages indicate market confidence in inflation control.    
+For Investors:   
+YoY momentum shifts act as early warning signals for upcoming interest-rate adjustments.   
+For Analysts:    
+Combining multiple trend-analysis techniques deepens interpretability and prevents misreading of short-term fluctuations.   
+Takeaway:   
+Inflation expectations react sharply to shocks but tend to re-anchor once monetary credibility is restored.    
+Understanding these dynamics helps organizations anticipate sentiment changes and improve risk forecasting.    
+
+Practicalities    
+Present your work as a concise analytical notebook or report, clearly showing methodology, visual insights, and interpretation.   
+Focus on how each technique contributes a unique perspective to the same dataset.   
+
+Deliverables  
+
+Python notebook or script performing full analysis    
+Visualizations for each technique      
+Short written summary of insights and economic relevance    
+Estimated Completion Time: ~6–8 hours   
+
+Tips   
+Forward-fill missing values (ffill) to preserve daily continuity.   
+Convert dates with pd.to_datetime before plotting to prevent epoch errors.   
+Use matplotlib.dates to simplify long-range x-axis labels.   
+Link observed patterns to real macroeconomic events (rate hikes, wars, policy changes).   
+Keep visuals clear — focus on narrative clarity over complex styling.   
+
+Frequently Asked Questions   
+Can I use external libraries like statsmodels or scikit-learn for smoothing?   
+
+Answer: Yes. Use any library you prefer; the emphasis is on clear reasoning and interpretability   .
+
+What if there are missing or duplicated dates?   
+
+Answer: Forward-fill or interpolate missing values. Drop duplicates only if clearly invalid.      
+
+Should I build predictive models?   
+
+Answer: Not required. Focus on descriptive trend analysis rather than predictive modeling.   
